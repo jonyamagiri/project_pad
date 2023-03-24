@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projectPad</title>
+</head>
+<body>
+    <h1>Hello World!!!</h1>
+    <p>This is my first webpage!!!</p>
+    <p>My name is {{ first_name }}</p>
+    <p>{{ stuff | title }}</p>
+    <h3>Favorite Pizza:</h3>
+    {% for topping in favorite_pizza %}
+        {{ topping }} <br>
+    {% endfor %}
+    <br>
+    {{ favorite_pizza }} <br>
+    {{ favorite_pizza.0 }} <br>
+    {{ favorite_pizza[2] }} <br>
+
+</body>
+</html>
